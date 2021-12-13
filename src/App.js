@@ -114,13 +114,16 @@ const deleteDate = async (Date) => {
     <div className="App">
       <h1 style={h1}>My Medication Tracker</h1>
       <h1 style={h1}>My Date List</h1>
-      <Link to="/new"><button style={button}>Create New Date</button></Link>
+      <Link to="/new">
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+          <i class="material-icons">add</i>
+        </button></Link>
       <Routes>
         <Route path="/" element={<AllPosts posts={posts}/>}/>
         <Route path="/post/:id" element={<SinglePost posts={posts} 
         edit={getTargetDate}
-        deleteTodo={deleteDate}
-        /> } />
+        deleteDate={deleteDate}
+        />}/>
 
         <Route path="/new" element={
         <Form

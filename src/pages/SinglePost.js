@@ -25,7 +25,7 @@ const SinglePost = ({ posts, edit, deleteDate}) => {
       <h2>{post.medamount}</h2>
       <button onClick={(event) => edit(post)}>Edit {post.date}</button>
       <Link to="/">
-      <button onClick={(event)=> deleteDate}>Delete {post.date}</button>
+      <button onClick={(event)=> deleteDate(post)}>Delete {post.date}</button>
         <button>Go Back</button>
       </Link>
     </div>
