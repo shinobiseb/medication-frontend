@@ -22,6 +22,7 @@
 .medPost {
   display: flex;
   justify-content: center;
+  margin: 10px auto;
 }
 
 .createDateButton {
@@ -63,6 +64,7 @@ input {
 
 .headerButton {
   color: #fff;
+  text-align: center;
 }
 
 .headerButton:hover {
@@ -73,3 +75,63 @@ input {
 body {
   background-color: lavender;
 }
+
+.headerContainer {
+  width: 100%;
+  display: flex-inline;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonDiv {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.buttonShow {
+    background-color: var(--pink) !important;
+    border: none;
+}
+
+button:hover {
+  background-color: #424874 !important;
+  transition: 250ms;
+  transform: scale(.95);
+}
+
+.modal {
+  background-color: var(--navy);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  align-items: center;
+}
+
+.modalContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* .card {
+  z-index: -1 !important;
+} */
+

@@ -3,10 +3,10 @@ import './App.css';
 import AllPosts from "./pages/AllPosts";
 import SinglePost from './pages/SinglePost';
 import Form from './pages/Form';
+import Header from './components/header';
 
 
 import { useState, useEffect } from 'react';
-
 import { Routes, Route, Link } from 'react-router-dom';
 import {useNavigate} from "react-router-dom"
 
@@ -112,11 +112,7 @@ const deleteDate = async (Date) => {
   //Returned JSX
   return (
     <div className="App">
-      <div className='header'>
-        <Link className='headerButton' to="/">
-        <h1 style={h1}>MediTracker</h1>
-        </Link>
-      </div>
+      <Header/>
       <Link to="/new">
         <button id="addDate" class=" mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
           <i class="material-icons">add</i>
