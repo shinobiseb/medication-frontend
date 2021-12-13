@@ -35,12 +35,12 @@ const SinglePost = ({ posts, edit, deleteDate}) => {
             <h5>Time Taken: {post.timetaken}</h5>
           </div>
       <div className="buttonDiv">
-      <button className="buttonShow" onClick={(event) => edit(post)}>Edit {post.date}</button>
+      <button className="buttonShow" onClick={(event) => edit(post)}>Edit</button>
 
       <Link to="/">
         <button className="buttonShow">Go Back</button>
       </Link>
-        <button className="buttonShow" onClick = {()=> {setShow(true)}}>Delete {post.date} </button>
+        <button className="buttonShow" onClick = {()=> {setShow(true)}}>Delete</button>
            <Modal onClose={()=> setShow(false)} show={show} delButton={deleteButton()}/>
       </div>
     </div>

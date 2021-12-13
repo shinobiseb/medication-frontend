@@ -25,7 +25,7 @@ const Post = ({ post }) => {
             <h5>Time Taken: {post.timetaken}</h5>
               <div class="mdl-card__actions mdl-card--border">
                 <Link to={`/post/${post.id}`}>
-                Info
+                  Edit Card
                 </Link>
               </div>
           </div>
