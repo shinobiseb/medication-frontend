@@ -22,12 +22,12 @@ List your routes in a table
 
 | url                 | method | action                                 |        |
 |---------------------|--------|----------------------------------------|--------|
-| /dates           | get    | get all dates with medication entered    | index  |
-| /dates/:id       | get    | view a specific date                   | show   |
-| /dates/:id/new   | get    | make a new date entry                  | new    |
-| /dates/          | post   | post the new date entry                | create |
-| /dates/:id/edit  | get    | edit any item on the index              | edit   |
-| /dates/:id/      | put    | update the edited item from the list   | update |
+| /post           | get    | get all post with medication entered    | index  |
+| /post/:id       | get    | view a specific date                   | show   |
+| /post/:id/new   | get    | make a new date entry                  | new    |
+| /post/          | post   | post the new date entry                | create |
+| /post/:id/edit  | get    | edit any item on the index              | edit   |
+| /post/:id/      | put    | update the edited item from the list   | update |
 | /dates/:id       | delete | delete any date                        | delete |
 
 ### User Stories
@@ -49,6 +49,12 @@ The design I ultimately went with was a very minimal and straightforward, user-f
 
 ### Extra Features failed
 Many attempts were made for user implementation but ultimately I planned for it too late into the process, thinking things would go easier. I severly over estimated my abilities and had to scrap a lot. 
+
+### Deploying
+I wasn't sure why I had so many issues deploying randomly. 
+At first I thought it was just random bugs but it turned out to be a few syntax errors.
+
+However on netlify whenever I refresh I get a broken page message and Im still not sure why.
 
 ##### I plan to implement: 
 - user authentification
