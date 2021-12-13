@@ -21,7 +21,7 @@ const Post = ({ post }) => {
           </div>
           <div class="mdl-card__supporting-text">
             <h5>Medication: {post.medname}</h5>
-            <h5>Amount Taken: {post.medamount}</h5>
+            <h5>Amount Taken: {post.medamount}mg</h5>
             <h5>Time Taken: {post.timetaken}</h5>
               <div class="mdl-card__actions mdl-card--border">
                 <Link to={`/post/${post.id}`}>

@@ -51,18 +51,18 @@ const Form = ({ initialDate, handleSubmit, buttonLabel}) => {
         placeholder="Medication Name"
       />
       <input
-        type="text"
+        type="number"
         onChange={handleChange}
         value={formData.medamount}
         name="medamount"
-        placeholder="Amount Taken"
+        placeholder="Amount Taken (in mg)"
       />
       <input
         type="text"
         onChange={handleChange}
         value={formData.timetaken}
         name="timetaken"
-        placeholder="Time Taken"
+        placeholder="Time Taken (00:00 Format)"
       />
       <input className="createDatesSubmit" type="submit" value={buttonLabel} />
     </form>
