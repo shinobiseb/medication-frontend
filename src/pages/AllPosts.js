@@ -4,11 +4,11 @@ import Post from "../components/post";
 const AllPosts = (props) => {
   // For each post in the array render a Post component
   return <div>
-    {props.posts?.map((post) => <Post post={post} key={post.id} />)};
+    {props.posts?.map((post) => <Post post={post} key={post.id} />)}
   </div>
-};
+}
 
-export default AllPosts;
+export default AllPosts
 
       {/* <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
       <thead>

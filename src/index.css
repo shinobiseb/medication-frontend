@@ -1,3 +1,9 @@
+:root {
+  --pink: #FF4081;
+  --lavendar: #DCD6F7;
+  --navy: #424874;
+}
+
 .demo-card-wide.mdl-card {
   width: 512px;
 }
@@ -10,4 +16,60 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
+}
+
+.medPost {
+  display: flex;
+  justify-content: center;
+}
+
+.createDateButton {
+  margin: auto 10px !important;
+}
+
+.form {
+  width: 100%;
+}
+
+form {
+  width: 50%;
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  background-color: white !important;
+}
+
+.createDatesSubmit {
+  background-color: var(--pink) !important;
+  border: none !important;
+}
+
+.header {
+  background-color: var(--pink);
+  width: 100%;
+  color: #fff;
+}
+
+#addDate {
+  margin: 10px auto !important;
+  padding: 10px;
+}
+
+.headerButton {
+  color: #fff;
+}
+
+.headerButton:hover {
+  color: var(--navy) !important;
+  transition: 250ms;
+}
+
+body {
+  background-color: lavender;
 }

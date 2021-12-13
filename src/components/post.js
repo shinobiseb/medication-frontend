@@ -11,7 +11,7 @@ const Post = ({ post }) => {
     border: "3px solid",
     margin: "10px auto",
     width: "80%",
-  };
+  }
   return (
     <div className="medPost">
         <div class="demo-card-wide mdl-card mdl-shadow--2dp">
@@ -31,25 +31,7 @@ const Post = ({ post }) => {
           </div>
         </div>
       </div>
-      /* <table className="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
-      <thead>
-        <tr>
-          <th className="mdl-data-table__cell--non-numeric">Date</th>
-          <th>Medication</th>
-          <th>Quantity</th>
-          <th>Time Taken</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-        <td className="mdl-data-table__cell--non-numeric">{post.date}</td>
-        <td>{post.medname}</td>
-        <td>{post.medamount}</td>
-        <td>{post.timetaken}</td>
-        </tr>
-      </tbody>
-    </table>*/
-  );
-};
+  )
+}
 
-export default Post;
+export default Post

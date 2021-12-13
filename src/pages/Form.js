@@ -34,33 +34,39 @@ const Form = ({ initialDate, handleSubmit, buttonLabel}) => {
 
   // Our Form, an input for the subject and details fields and a submit button
   return (
+    <div className="form">
     <form onSubmit={handleSubmisson}>
       <input
         type="text"
         onChange={handleChange}
         value={formData.date}
         name="date"
-      />
-      <input
-        type="text"
-        onChange={handleChange}
-        value={formData.timetaken}
-        name="timetaken"
+        placeholder="Date Taken"
       />
       <input
         type="text"
         onChange={handleChange}
         value={formData.medname}
         name="medname"
+        placeholder="Medication Name"
       />
       <input
         type="text"
         onChange={handleChange}
         value={formData.medamount}
         name="medamount"
+        placeholder="Amount Taken"
       />
-      <input type="submit" value={buttonLabel} />
+      <input
+        type="text"
+        onChange={handleChange}
+        value={formData.timetaken}
+        name="timetaken"
+        placeholder="Time Taken"
+      />
+      <input className="createDatesSubmit" type="submit" value={buttonLabel} />
     </form>
+    </div>
   );
 };
 

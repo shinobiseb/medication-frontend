@@ -112,12 +112,16 @@ const deleteDate = async (Date) => {
   //Returned JSX
   return (
     <div className="App">
-      <h1 style={h1}>My Medication Tracker</h1>
-      <h1 style={h1}>My Date List</h1>
+      <div className='header'>
+        <Link className='headerButton' to="/">
+        <h1 style={h1}>MediTracker</h1>
+        </Link>
+      </div>
       <Link to="/new">
-        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+        <button id="addDate" class=" mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
           <i class="material-icons">add</i>
-        </button></Link>
+        </button>
+        </Link>
       <Routes>
         <Route path="/" element={<AllPosts posts={posts}/>}/>
         <Route path="/post/:id" element={<SinglePost posts={posts} 
@@ -126,10 +130,10 @@ const deleteDate = async (Date) => {
         />}/>
 
         <Route path="/new" element={
-        <Form
+        <Form 
         initialDate={nullDate}
         handleSubmit={addDates}
-        buttonLabel={"create dates"}
+        buttonLabel={"create"}
         />}/>
         <Route path="/edit" element={<Form
         initialDate={targetDate}
