@@ -1,70 +1,67 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project 4
 
-## Available Scripts
+### By Seb Patin
 
-In the project directory, you can run:
+### Project Summary
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Models
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The model is representative of a date where medication is tracked
 
-### `npm test`
+- date: String
+- medication name: String
+- medication amount taken: String
+- year: String
+- image: String
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Route Table
 
-### `npm run build`
+List your routes in a table
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| url                 | method | action                                 |        |
+|---------------------|--------|----------------------------------------|--------|
+| /dates           | get    | get all dates with medication entered    | index  |
+| /dates/:id       | get    | view a specific date                   | show   |
+| /dates/:id/new   | get    | make a new date entry                  | new    |
+| /dates/          | post   | post the new date entry                | create |
+| /dates/:id/edit  | get    | edit any item on the index              | edit   |
+| /dates/:id/      | put    | update the edited item from the list   | update |
+| /dates/:id       | delete | delete any date                        | delete |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### User Stories
+- User will be able to enter last medication date taken
+- User will be able to update information on the days tracked
+- User will be able to delete date entries
+- User will be able to view all date entries
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Challenges
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Props
+My understanding of props was tested heavily during this project.  I had to perform many trial and errors in order to make sure what I was doing would work, and not break my code in the process.  Understanding, the data and how it can flow through props was very tough and I will require a lot more practice.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Design
+My original idea for what the design of the site proved to be way more difficult than originally intended.  I had planned for the data to be shown on a type of rotating carousel that could allow the users to see the previous and next days of medication tracked but ultimately I found that a simpler design would allow me to focus on the cohesiveness of the website.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The design I ultimately went with was a very minimal and straightforward, user-friendly experience, to allow the user to intuitively navigate and use the website.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Extra Features failed
+Many attempts were made for user implementation but ultimately I planned for it too late into the process, thinking things would go easier. I severly over estimated my abilities and had to scrap a lot. 
 
-## Learn More
+##### I plan to implement: 
+- user authentification
+- a calendar system 
+- better structured form that will require certain things, and not allow other things: such as using incorrect wording or format
+- Dropdown menus for Dates, medication amounts and possibly medication names (possibly with an external API)
+- Alotment for multiple types of medication to be added on the same date
+- A confirmed tiny popup at the bottom
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### List of Technologies
+- Python
+- Masonite
+- Postgres
+- JavaScript
+- React
+- Material Design Lite
