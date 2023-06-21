@@ -8,13 +8,12 @@
 
 ### Models
 
-The model is representative of a date where medication is tracked
+The model is representative of a date when medication is tracked
 
 - date: String
 - medication name: String
 - medication amount taken: String
 - year: String
-- image: String
 
 ### Route Table
 
@@ -52,16 +51,16 @@ Many attempts were made for user implementation but ultimately I planned for it 
 
 ### Deploying
 I wasn't sure why I had so many issues deploying randomly. 
-At first I thought it was just random bugs but it turned out to be a few syntax errors.
+At first, I thought it was just random bugs but it turned out to be a few syntax errors.
 
-However on netlify whenever I refresh I get a broken page message and Im still not sure why.
+However on Netlify whenever I refresh I get a broken page message and I'm still not sure why.
 
 ##### I plan to implement: 
 - user authentification
 - a calendar system 
-- better structured form that will require certain things, and not allow other things: such as using incorrect wording or format
+- better-structured form that will require certain things, and not allow other things: such as using incorrect wording or format
 - Dropdown menus for Dates, medication amounts and possibly medication names (possibly with an external API)
-- Alotment for multiple types of medication to be added on the same date
+- Allotment for multiple types of medication to be added on the same date
 - A confirmed tiny popup at the bottom
 
 ### List of Technologies
