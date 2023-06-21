@@ -30,7 +30,7 @@ function App() {
   ///////////////////
 
   //API URL
-  const url = "https://sspenguinmedicationtrackerapps.herokuapp.com/dates/";
+  const url = "https://web-production-d33d.up.railway.app/dates";
 
   const [posts, setPosts] = useState([]);
 

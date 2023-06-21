@@ -9,22 +9,3 @@ const AllPosts = (props) => {
 }
 
 export default AllPosts
-
-      {/* <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
-      <thead>
-        <tr>
-          <th class="mdl-data-table__cell--non-numeric">Date</th>
-          <th>Medication</th>
-          <th>Quantity</th>
-          <th>Time Taken</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-        <td>{post.date}</td>
-        <td>{post.medname}</td>
-        <td>{post.medamount}</td>
-        <td>{post.timetaken}</td>
-        </tr>
-      </tbody>
-      </table> */}

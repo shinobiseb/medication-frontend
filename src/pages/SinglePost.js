@@ -23,7 +23,6 @@ const SinglePost = ({ posts, edit, deleteDate}) => {
 
   return (
     <div className="AppContainer">
-    
     <div class="card demo-card-wide mdl-card mdl-shadow--2dp">
       <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">
@@ -41,11 +40,10 @@ const SinglePost = ({ posts, edit, deleteDate}) => {
         <button className="buttonShow">Go Back</button>
       </Link>
         <button className="buttonShow" onClick = {()=> {setShow(true)}}>Delete</button>
-           <Modal onClose={()=> setShow(false)} show={show} delButton={deleteButton()}/>
+        <Modal onClose={()=> setShow(false)} show={show} delButton={deleteButton()}/>
       </div>
     </div>
   </div>
-
   );
 };
 
