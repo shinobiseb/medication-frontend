@@ -24,7 +24,6 @@
   justify-content: center;
   margin: 10px auto;
   font-size: large;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .createDateButton {
@@ -94,6 +93,7 @@ body {
 
 .buttonShow {
     background-color: var(--pink) !important;
+    padding: 0;
     border: none;
 }
 
