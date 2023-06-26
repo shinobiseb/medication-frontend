@@ -110,8 +110,8 @@ const deleteDate = async (Date) => {
     <div className="App">
       <Header/>
       <Link to="/new">
-        <button id="addDate" class=" mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
-          <i class="material-icons">add</i>
+        <button id="addDate" className="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+          <i className="material-icons ">+</i>
         </button>
         </Link>
       <Routes>

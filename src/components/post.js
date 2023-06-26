@@ -14,16 +14,16 @@ const Post = ({ post }) => {
   }
   return (
     <div className="medPost">
-        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">
+        <div className="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div className="mdl-card__title">
+            <h2 className="mdl-card__title-text">
               {post.date}</h2>
           </div>
-          <div class="mdl-card__supporting-text">
+          <div className="mdl-card__supporting-text">
             <h5>Medication: {post.medname}</h5>
             <h5>Amount Taken: {post.medamount}mg</h5>
             <h5>Time Taken: {post.timetaken}</h5>
-              <div class="mdl-card__actions mdl-card--border">
+              <div className="mdl-card__actions mdl-card--border">
                 <Link to={`/post/${post.id}`}>
                   Edit Card
                 </Link>
