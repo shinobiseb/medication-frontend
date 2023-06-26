@@ -23,6 +23,8 @@
   display: flex;
   justify-content: center;
   margin: 10px auto;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .createDateButton {
@@ -130,8 +132,3 @@ button:hover {
   justify-content: space-between;
   align-items: center;
 }
-
-/* .card {
-  z-index: -1 !important;
-} */
-
