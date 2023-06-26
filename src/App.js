@@ -30,7 +30,7 @@ function App() {
   ///////////////////
 
   //API URL
-  const url = "https://web-production-d33d.up.railway.app/dates";
+  const url = "https://web-production-d33d.up.railway.app/dates/";
 
   const [posts, setPosts] = useState([]);
 
@@ -101,8 +101,6 @@ const deleteDate = async (Date) => {
   getDates();
   navigate("/");
 };
-
-  //UseEffects
 
   //useEffect to get the dates
   useEffect(()=> {
