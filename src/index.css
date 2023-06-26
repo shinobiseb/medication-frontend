@@ -4,6 +4,10 @@
   --navy: #424874;
 }
 
+* {
+  font-family: 'Courier New', Courier, monospace !important; 
+}
+
 .demo-card-wide.mdl-card {
   width: 512px;
 }
