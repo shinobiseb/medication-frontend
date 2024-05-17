@@ -28,7 +28,7 @@ function App() {
   ///////////////////
 
   //API URL
-  const url = "https://web-production-d33d.up.railway.app/dates/";
+  const url = "https://medication-tracker-application-project4.vercel.app/";
 
   const [posts, setPosts] = useState([]);
 
